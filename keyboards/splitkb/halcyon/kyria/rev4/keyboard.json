@@ -8,8 +8,7 @@
     "encoder": {
         "enabled": true,
         "rotary": [
-            {"pin_a": "GP23", "pin_b": "GP22", "resolution": 2},
-            {"pin_a": "NO_PIN", "pin_b": "NO_PIN", "resolution": 2}
+            {"pin_a": "GP23", "pin_b": "GP22", "resolution": 2}
         ]
     },
     "features": {
@@ -24,7 +23,7 @@
     },
     "matrix_pins": {
         "cols": ["GP19", "GP20", "GP25", "GP4", "GP9", "GP10", "GP5"],
-        "rows": ["GP8", "GP11", "GP7", "GP6", "NO_PIN"]
+        "rows": ["GP8", "GP11", "GP7", "GP6"]
     },
     "processor": "RP2040",
     "rgb_matrix": {
@@ -116,31 +115,31 @@
             {"x": 199, "y": 45, "flags": 2},
             {"x": 166, "y": 49, "flags": 2},
             {"x": 130, "y": 53, "flags": 2},
-            {"matrix": [8, 0], "x": 130, "y": 64, "flags": 4},
-            {"matrix": [8, 5], "x": 145, "y": 60, "flags": 4},
-            {"matrix": [8, 1], "x": 159, "y": 53, "flags": 4},
-            {"matrix": [8, 2], "x": 173, "y": 49, "flags": 4},
-            {"matrix": [8, 4], "x": 188, "y": 49, "flags": 4},
-            {"matrix": [7, 0], "x": 123, "y": 49, "flags": 4},
-            {"matrix": [8, 3], "x": 137, "y": 45, "flags": 4},
-            {"matrix": [7, 1], "x": 152, "y": 38, "flags": 4},
-            {"matrix": [7, 2], "x": 166, "y": 34, "flags": 4},
-            {"matrix": [7, 3], "x": 181, "y": 30, "flags": 4},
-            {"matrix": [7, 4], "x": 195, "y": 34, "flags": 4},
-            {"matrix": [7, 5], "x": 210, "y": 41, "flags": 4},
-            {"matrix": [7, 6], "x": 224, "y": 41, "flags": 4},
-            {"matrix": [6, 1], "x": 152, "y": 23, "flags": 4},
-            {"matrix": [6, 2], "x": 166, "y": 19, "flags": 4},
-            {"matrix": [6, 3], "x": 181, "y": 15, "flags": 4},
-            {"matrix": [6, 4], "x": 195, "y": 19, "flags": 4},
-            {"matrix": [6, 5], "x": 210, "y": 26, "flags": 4},
-            {"matrix": [6, 6], "x": 224, "y": 26, "flags": 4},
-            {"matrix": [5, 1], "x": 152, "y": 8, "flags": 4},
-            {"matrix": [5, 2], "x": 166, "y": 4, "flags": 4},
-            {"matrix": [5, 3], "x": 181, "y": 0, "flags": 4},
-            {"matrix": [5, 4], "x": 195, "y": 4, "flags": 4},
-            {"matrix": [5, 5], "x": 210, "y": 11, "flags": 4},
-            {"matrix": [5, 6], "x": 224, "y": 11, "flags": 4}
+            {"matrix": [7, 0], "x": 130, "y": 64, "flags": 4},
+            {"matrix": [7, 5], "x": 145, "y": 60, "flags": 4},
+            {"matrix": [7, 1], "x": 159, "y": 53, "flags": 4},
+            {"matrix": [7, 2], "x": 173, "y": 49, "flags": 4},
+            {"matrix": [7, 4], "x": 188, "y": 49, "flags": 4},
+            {"matrix": [6, 0], "x": 123, "y": 49, "flags": 4},
+            {"matrix": [7, 3], "x": 137, "y": 45, "flags": 4},
+            {"matrix": [6, 1], "x": 152, "y": 38, "flags": 4},
+            {"matrix": [6, 2], "x": 166, "y": 34, "flags": 4},
+            {"matrix": [6, 3], "x": 181, "y": 30, "flags": 4},
+            {"matrix": [6, 4], "x": 195, "y": 34, "flags": 4},
+            {"matrix": [6, 5], "x": 210, "y": 41, "flags": 4},
+            {"matrix": [6, 6], "x": 224, "y": 41, "flags": 4},
+            {"matrix": [5, 1], "x": 152, "y": 23, "flags": 4},
+            {"matrix": [5, 2], "x": 166, "y": 19, "flags": 4},
+            {"matrix": [5, 3], "x": 181, "y": 15, "flags": 4},
+            {"matrix": [5, 4], "x": 195, "y": 19, "flags": 4},
+            {"matrix": [5, 5], "x": 210, "y": 26, "flags": 4},
+            {"matrix": [5, 6], "x": 224, "y": 26, "flags": 4},
+            {"matrix": [4, 1], "x": 152, "y": 8, "flags": 4},
+            {"matrix": [4, 2], "x": 166, "y": 4, "flags": 4},
+            {"matrix": [4, 3], "x": 181, "y": 0, "flags": 4},
+            {"matrix": [4, 4], "x": 195, "y": 4, "flags": 4},
+            {"matrix": [4, 5], "x": 210, "y": 11, "flags": 4},
+            {"matrix": [4, 6], "x": 224, "y": 11, "flags": 4}
         ],
         "max_brightness": 128,
         "sleep": true,
@@ -161,19 +160,13 @@
         "matrix_pins": {
             "right": {
                 "cols": ["GP5", "GP10", "GP9", "GP4", "GP25", "GP20", "GP19"],
-                "rows": ["GP8", "GP11", "GP7", "GP6", "NO_PIN"]
+                "rows": ["GP8", "GP11", "GP7", "GP6"]
             }
         },
         "serial": {
             "driver": "vendor"
         },
         "transport": {
-            "sync": {
-                "indicators": true,
-                "layer_state": true,
-                "matrix_state": true,
-                "modifiers": true
-            },
             "watchdog": true,
             "watchdog_timeout": 3000
         }
